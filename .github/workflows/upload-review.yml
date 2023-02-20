@@ -36,7 +36,7 @@ jobs:
       - name: Upload Widgetbook
         run: |
           widgetbook publish \
-                --api-key ${{ secrets.WIDGETBOOK_CLOUD_API_KEY }} \
+                --api-key IcTbIHsDTryd9g7ushXinZb9eirHPckp \
                 --repository \
                 $GITHUB_REPOSITORY \
                 --actor \
