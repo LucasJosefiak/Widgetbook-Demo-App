@@ -6,13 +6,18 @@ import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart' show Knobs, Option;
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 
-@WidgetbookUseCase(name: 'Default', type: CollapsedTweet)
+@WidgetbookUseCase(
+    name: 'Default',
+    type: CollapsedTweet,
+    designLink:
+        "https://www.figma.com/file/hqKiYoC5Ky9cLSTixmtRfs/Twitter-Clone---Widgetbook-Demo-App-(Copy)?node-id=179%3A1054&t=j6cQNBjMa64DHCGL-4")
 Widget collapsedTweetDefaultUseCase(BuildContext context) {
   return CollapsedTweet(
     tweet: Tweet(
       rawText: context.knobs.text(
         label: 'Tweet Text',
-        initialValue: 'This is Lucas Test Tweet #hashtag @mention',
+        initialValue:
+            'This is Lucas Test Tweet. Leeeeeeeeeets gooooooo #hashtag @mention',
       ),
       inReplyToUser:
           context.knobs.boolean(label: 'Is Reply', initialValue: true)
