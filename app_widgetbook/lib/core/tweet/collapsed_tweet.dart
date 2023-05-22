@@ -17,7 +17,7 @@ Widget collapsedTweetDefaultUseCase(BuildContext context) {
       rawText: context.knobs.text(
         label: 'Tweet Text',
         initialValue:
-            'This is Lucas Test Tweet. Leeeeeeeeeets gooooooo #hashtag @mention',
+            'This is a different text than before. This text is longer to showcase that this widget is also properly implemented for in case the tweet is longer.',
       ),
       inReplyToUser:
           context.knobs.boolean(label: 'Is Reply', initialValue: true)
